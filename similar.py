@@ -13,7 +13,7 @@ answer_vectors = joblib.load("answer_vectors.pkl")
 df = joblib.load("qa_dataframe.pkl")
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, resources={r"/*": {"origins": "*"}}, supports_credentials=True)
 
 
 def extract_keywords(question):
