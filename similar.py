@@ -66,6 +66,7 @@ def search_web_scrape(new_question):
 def ask_question():
     data = request.get_json()
     new_question = data.get("question")
+    web_question = data.get("web")
 
     if not new_question:
         return jsonify({"error": "No question provided"}), 400
@@ -83,7 +84,7 @@ def ask_question():
     ]
 
     # Search for the answer on the web and set a default message if None
-    web_answer = search_web_scrape(new_question) or "No relevant web answer found."
+    web_answer = search_web_scrape(web_question) or "No relevant web answer found."
 
     result = {
         "similar_answers": similar_answers,
@@ -91,7 +92,3 @@ def ask_question():
     }
 
     return jsonify(result)
-
-
-if __name__ == '__main__':
-    app.run(host='0.0.0.0',debug=True,port=1000)
