@@ -13,7 +13,7 @@ answer_vectors = joblib.load("answer_vectors.pkl")
 df = joblib.load("qa_dataframe.pkl")
 
 app = Flask(__name__)
-CORS(app, resources={r"/*": {"origins": "https://ai-quest.netlify.app"}}, supports_credentials=True)
+CORS(app, resources={r"/*": {"origins": "*"}}, supports_credentials=True)
 
 
 def extract_keywords(question):
@@ -94,4 +94,4 @@ def ask_question():
 
 
 if __name__ == '__main__':
-    app.run(host="0.0.0.0", port=1000, debug=True)
+    app.run(debug=True,port=1000)

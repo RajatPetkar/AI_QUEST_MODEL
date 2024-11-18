@@ -39,7 +39,7 @@ async function fetchDataAndSendToPython() {
     console.log("Fetched questions:", questions);
 
     // Pass data to Python script
-    const pythonProcess = spawn("python", ["processData.py", JSON.stringify(questions)]);
+    const pythonProcess = spawn("python", ["./processData.py", JSON.stringify(questions)]);
 
     pythonProcess.stdout.on("data", (data) => {
       console.log(`Python output: ${data}`);
