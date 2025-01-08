@@ -1,0 +1,79 @@
+/* CompanyForm container */
+.company-form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 5rem;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Header for the form */
+  .company-form-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Form styles specific to CompanyForm */
+  .company-form-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Label styles specific to CompanyForm */
+  .company-form-container label {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #555;
+  }
+  
+  /* Input field styles specific to CompanyForm */
+  .company-form-container input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .company-form-container input:focus {
+    border-color: #4a90e2;
+    outline: none;
+  }
+  
+  /* Submit button styles specific to CompanyForm */
+  .company-form-container button {
+    background-color: #4a90e2;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+  }
+  
+  .company-form-container button:hover {
+    background-color: #357ab7;
+  }
+  
+  /* Responsive styling for smaller screens */
+  @media (max-width: 600px) {
+    .company-form-container {
+      padding: 10px;
+    }
+  
+    .company-form-container input {
+      padding: 8px;
+    }
+  
+    .company-form-container button {
+      padding: 10px 16px;
+    }
+  }
+  

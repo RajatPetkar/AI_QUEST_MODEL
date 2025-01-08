@@ -1,0 +1,114 @@
+/* App container */
+.app-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100vh;
+    padding: 20px;
+  }
+.xyz{
+    margin-top: 70px;
+
+}
+  
+  /* Search container */
+  .search-container {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Search bar */
+  .search-bar {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 2px solid #ddd;
+    font-size: 1rem;
+    outline: none;
+  }
+  
+  /* Focus state of search bar */
+  .search-bar:focus {
+    border-color: #007bff;
+  }
+  
+  /* Company list container */
+  .company-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Individual company card */
+  .company-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .company-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Link styling */
+  .company-link {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Content inside the company card */
+  .company-card-content {
+    padding: 20px;
+  }
+  
+  /* Header with logo and name */
+  .company-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .company-logo {
+    margin-right: 10px;
+  }
+  
+  .logo-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  /* Company name styling */
+  .company-name {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Stats under the company name */
+  .company-stats {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 10px;
+  }
+  
+  /* Company description styling */
+  .company-description {
+    font-size: 0.95rem;
+    color: #555;
+  }
+  
+  /* No results text */
+  .no-results {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #aaa;
+  }
+  

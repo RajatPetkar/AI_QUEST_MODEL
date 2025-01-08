@@ -1,0 +1,158 @@
+.main-nav {
+  min-height: 50px;
+  width: 100%;
+  margin: 0% auto;
+  border-top: solid 3px #A5A5A5;
+  box-shadow: 0px 1px 5px #efefef;
+  position: fixed;
+  z-index: 15;
+  top: 0%;
+  left: 0%;
+  background-color: #efefef;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-item {
+  display: flex;                 
+  align-items: center;            
+  justify-content: center;       
+  text-decoration: none;          
+}
+
+.nav-logo-container {
+  display: flex;                  /* Use flex to align the logo and text */
+  align-items: center;            /* Align vertically */
+}
+
+.logo-img {
+  width: 70px;                    /* Set a fixed size for the logo */
+  height: auto;                   /* Maintain aspect ratio */
+  margin-right: 8px;              /* Space between logo and text */
+}
+
+.logo-text {
+  font-size: 24px;                /* Adjust font size for the logo text */
+  font-weight: bold;              /* Make the text bold */
+  color: #212020;                    /* Set a color for the text */
+}
+
+
+.navbar {
+  height: 100%;
+  min-width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide-in-icon {
+  display: none;
+  transition: 0.2s;
+  padding: 5px 6px 3px 6px;
+  border-radius: 50%;
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar .navbar-1 {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  width: 40%;
+}
+
+.navbar .navbar-2 {
+  display: flex;
+  align-items: center;
+  margin: 0 15px;
+  width: 60%;
+}
+
+.nav-logo {
+  padding: 5px 25px;
+}
+
+.nav-item {
+  font-size: small;
+  font-weight: 500;
+  text-decoration: none;
+  color: rgb(69, 69, 69);
+  transition: 0.2s;
+}
+
+.nav-btn {
+  cursor: pointer;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+
+.nav-item:hover,
+.slide-in-icon:hover {
+  background-color: rgb(226, 226, 226);
+}
+
+.navbar .navbar-2 form {
+  flex-grow: 1;
+  padding: 0px;
+  position: relative;
+}
+
+.navbar .navbar-2 form input {
+  min-width: 80%;
+  margin: 0;
+  padding: 8px 10px 8px 32px;
+  font-size: 13px;
+  border: solid 1px #0000003e;
+  border-radius: 3px;
+}
+
+.navbar .navbar-2 form .search-icon {
+  position: absolute;
+  left: 10px;
+  top: 8px;
+}
+
+.navbar .navbar-2 div {
+  margin: 0 5px 0 0;
+}
+
+.nav-links {
+  padding: 7px 13px;
+  /* border: solid 1px #A5A5A5; */
+  border-radius: 5px;
+  color: white;
+  background-color: #161717;
+  cursor: pointer;
+}
+
+.nav-links:hover {
+  background-color: #000000;
+}
+
+@media screen and (min-width: 1600px) {
+  .navbar {
+    min-width: unset;
+    width: 1440px;
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  .navbar .navbar-1 form {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .slide-in-icon {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .navbar .navbar-1 .res-nav {
+    display: none;
+  }
+}
